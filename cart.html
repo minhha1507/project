@@ -1,0 +1,76 @@
+<div>
+    <div ng-controller="cartControl as cart">
+        <h3>CART</h3>
+        <label>Type of Ticket</label> <br> <br>
+        <select name="loaive" id="loaive" ng-model="loaiVe" ng-change="onChangeLoaiVe()">
+            <option value="Adults">Adults</option>
+            <option value="Children">Children (over 5 years old)</option>
+            <option value="ChildrenUnder5yearsOld">Children (under 5 years old)</option>
+            <option value="FamilyPackMoreThan3Adults">Family pack (with more than 3 Adults)</option>
+            <option value="FamilyPackMoreThan3Child">Family pack (with more than 3 Child more than 5 years old)
+            </option>
+        </select>
+        <br>
+        <label>Type</label> <br>
+        <input type="radio" ng-model="loaiThoiGian" value="weekday"/>
+        <label> Weekday</label>
+        <input type="radio" ng-model="loaiThoiGian" value="weekend"/>
+        <label> Weekend</label>
+        <br>
+        <label>Quantity: </label>
+        <input type="number" name="qty" id="qty" placeholder="nhap so luong"
+               ng-model="soluong"
+               ng-change="pay()"
+               min="1"
+        > 
+        <br>
+        <label>Unit Price: {{dongia}}</label>
+        <br>
+        <label> Total Price: {{soluong * dongia}}</label>
+        <br>
+        <button type="button" class="btn btn-primary" ng-click="themVaoGioHang()">Add to Cart</button>
+        <button type="button" class="btn btn-warning" ng-click="xoaGioHang()" style="margin-left: 10px">Clear cart</button>
+        <br><br>
+
+        <hr class="hr" />
+
+        <div>
+            <h4>List items</h4>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Total Price</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in cartDisplay">
+                    <th scope="row">{{item.soThuTu}}</th>
+                    <td>{{item.tenLoaiVe}}</td>
+                    <td>
+                        <input type="number" placeholder="nhap so luong"
+                                       ng-model="item.soLuong"
+                                       ng-change="updateSoLuong(item)" min="1"/>
+                    </td>
+                    <td>{{item.giaTien * item.soLuong}} $</td>
+                    <td><button type="button" class="btn btn-danger" ng-click="xoaItem(item)">Delete</button></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div><p style="font-weight: bold;">Total: {{tongTienChuaVAT}} $</p></div>
+            <div><p style="font-weight: bold;">Total (VAT): {{tongTienCoVAT}} $</p></div>
+            <br>
+            <div>
+                <button type="button" class="btn btn-primary" ng-click="confirmThanhToan()">
+                    Pay
+                </button>
+            </div>
+        </div>
+        <br><br>
+
+    </div>
+</div>

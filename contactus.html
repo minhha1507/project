@@ -1,0 +1,101 @@
+<style>
+    .send {
+        border: 1px thin solid #e63e1c;
+        width: 30%;
+        margin-top: 30px;
+        padding-left: 6px;
+    }
+
+    .send:hover {
+        background-color: gray;}
+    .contact{background-color: rgb(227, 239, 245);}
+    
+</style>
+<div class="contact">
+    <div class="container">
+        <div class="tittle text-center wow fadeInLeft" data-wow-delay="0.1s">
+            <p
+                style="font-size: 100px; font-family: Georgia, 'Times New Roman', Times, serif; color: chocolate; font-weight: bold;">
+                Contact Us</p>
+            <h2
+                style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(36, 36, 222); font-weight: bold;">
+                Contact For Any Question</h2>
+        </div>
+        <div class="row align-items-center contact-information">
+            <div class="col-md-6 col-lg-4">
+                <div class="contact-info wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="contact-icon">
+                        <i class="fa fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Address</h3>
+                        <p>590 CMT8, Ward 11, District 3, HCM City</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-info wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="contact-icon">
+                        <i class="fa fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Hotline</h3>
+                        <p>+84 12345678</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-info wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email Us</h3>
+                        <p>Team3@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row contact-form">
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <form name="sentMessage" id="contactForm"
+                    onsubmit="alert('Your message has been sent. Thank you for contacting us, we will get back to you as soon as possible.')">
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="username" placeholder="Your Name" required />
+                    </div><br>
+
+                    <div class="control-group">
+                        <input type="email" class="form-control" id="email"
+                            pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]{1,}\.[a-zA-z]{2,3}"
+                            placeholder="Your Email ( Example: group5@gmail.com )" required />
+
+                    </div><br>
+                    <div class="control-group">
+                        <input type="number" class="form-control" id="phone" placeholder="Phone" required />
+
+                    </div><br>
+                    <div class="control-group">
+                        <textarea class="form-control" id="message" placeholder="Message" required></textarea>
+
+                    </div>
+
+                    <div class="send">
+                        <button class="btn custom-btn" type="submit" id="sendMessageButton" onclick="send()">Send
+                            Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 wow fadeInUp bt " data-wow-delay="0.1s">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.325247592172!2d106.66410831431712!3d10.786382261960465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2zRlBUIEFwdGVjaCBIQ00gLSBI4buHIFRo4buRbmcgxJDDoG8gVOG6oW8gTOG6rXAgVHLDrG5oIFZpw6puIFF14buRYyBU4bq_IChTaW5jZSAxOTk5KQ!5e0!3m2!1svi!2s!4v1627889887495!5m2!1svi!2s"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+</script>

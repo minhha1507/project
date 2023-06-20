@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="">
+
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="vendor/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <!-- Slick Css -->
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <!-- Mean Menu -->
+    <link rel="stylesheet" href="vendor/jQuery-Plugin-for-Responsive-Menu-System-meanMenu/meanmenu.min.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- Main style -->
+    <link rel="stylesheet" href="vendor/css/style.css">
+    <link rel="stylesheet" href="vendor/css/responsive.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- START HEADER -->
+        <header class="header-area header-wrapper">
+            <!-- TOP HEADER -->
+            <div class="header-top-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 hidden-xs">
+                            <div class="call-us">
+                                <p class="roboto">(+88) 7979797979</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="top-link clearfix">
+                                <ul class="link">
+                                    <li>
+                                        <a href="membership.html">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            My Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html">
+                                            <span class="glyphicon glyphicon-shopping-cart" id="countCart"></span>
+                                            Cart
+                                        </a>
+                                    </li>
+                                    <li id="auth">
+                                        <a href="login.html">
+                                            <span class="glyphicon glyphicon-lock"></span>
+                                            Login
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MENU HEADER  -->
+            <div class="header-middle-area" id="sticky-header">
+                <div class="container-fluid">
+                    <div class="full-width-mega-dropdown">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-6 col-xs-12">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="vendor/img/logo/rhythm_house.png" alt="main logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-8 hidden-sm hidden-xs">
+                                <nav>
+                                    <ul class="main-menu text-center">
+                                        <li><a href="index.html">Home</a>
+                                        </li>
+                                        <li class="mega-parent"><a href="product.html" >Products</a>
+                                            <div class="mega-menu-area clearfix">
+                                                <div class="mega-menu-link f-left">
+                                                    <ul class="single-mega-item">
+                                                        <li class="menu-title">TYPE</li>
+                                                        <li>
+                                                            <a href="product.html?type=cd">CD</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="product.html?type=dvd">DVD</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="product.html?type=tape">Tape</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="single-mega-item">
+                                                        <li class="menu-title">TIMES LIFESTYLE</li>
+                                                        <li>
+                                                            <a href="product.html?type=book">Book</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="product.html?type=magazine">Magazine</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="single-mega-item">
+                                                        <li class="menu-title">CATEGORIES</li>
+                                                        <li>
+                                                            <a href="product.html?category=movie">Movies</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="product.html?category=music">Music</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="product.html?category=poem">Poem</a>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                </div>
+                                                <div class="mega-menu-photo f-left">
+                                                    <a href="#">
+                                                        <img src="vendor/img/mega-menu/1.jpg" alt="mega menu image">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="membership.html">Membership</a>
+                                        </li>
+                                        <li><a href="javascript:void(0)" style="color: #FF7F00; border-bottom:1px solid #FF7F00;">Blog</a>
+                                            <ul class="dropdwn">
+                                                <li>
+                                                    <a href="liveshow.html">Liveshows</a>
+                                                </li>
+                                                <li>
+                                                    <a href="contest.html">Contests</a>
+                                                </li>
+                                                <li>
+                                                    <a href="news.html">Event</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="aboutus.html">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START MOBILE MENU -->
+        <div class="mobile-menu-area hidden-lg hidden-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="mobile-menu">
+                            <nav id="dropdown">
+                                <ul>
+                                    <li><a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="product.html">Products</a>
+                                        <ul>
+                                            <li>
+                                                <a href="product.html?type=cd">CD</a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html?type=dvd">DVD</a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html?type=tape">Tape</a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html?type=book">Book</a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html?type=magazine">Magazine</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0)">Blog</a>
+                                        <ul>
+                                            <li>
+                                                <a href="liveshow.html">Liveshows</a>
+                                            </li>
+                                            <li>
+                                                <a href="contest.html">Contests</a>
+                                            </li>
+                                            <li>
+                                                <a href="news.html">Event</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.html">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MOBILE MENU -->
+
+        <!-- Start page content -->
+        <section id="page-content" class="page-wrapper">
+
+            <!-- UP COMMING PRODUCT SECTION START -->
+            <div class="up-comming-product-section">
+                <div class="container">
+                    <div class="row">
+                        <!-- up-comming-pro -->
+                        <div class="col-xs-12 mb-20">
+                            <div class="up-comming-pro up-comming-pro-2 clearfix">
+                                <div class="up-comming-pro-img">
+                                    <a href="#">
+                                        <img src="vendor/img/product/contest/indianRaga_monthly_contest.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="up-comming-pro-info">
+                                    <h3><a href="#">IndianRaga monthly contest</a></h3>
+                                    <p>IndianRaga today is the largest network of the best talent in music and dance in North America, and fast-growing globally. Iconic arts institutions and leading global corporate houses invite us regularly to present concerts, workshops, and lecdems to their audiences and employees. IndianRaga offers these opportunities to members of its Fellowship network, and has become a platform to not only perform but also develop and mature into fine professional performers.</p>
+                                    <div class="up-comming-time-2 clearfix">
+                                        <div data-countdown="2017/01/15"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 mb-20">
+                            <div class="up-comming-pro up-comming-pro-2 clearfix">
+                                <div class="up-comming-pro-img">
+                                    <a href="#">
+                                        <img src="vendor/img/product/contest/world_music_competition.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="up-comming-pro-info">
+                                    <h3><a href="#">World Music Competition</a></h3>
+                                    <p>Since 1992, the competition is bringing together the best musicians. 
+                                        The competition offers the artistic promotion and the financial support for musicians, who are willing to expand their musical career.
+                                        The final concert is taking place in Vienna, the world famous city for music. </p>
+                                    <div class="up-comming-time-2 clearfix">
+                                        <div data-countdown="2017/01/15"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="col-xs-12 mb-20">
+                            <div class="up-comming-pro up-comming-pro-2 clearfix">
+                                <div class="up-comming-pro-img">
+                                    <a href="#">
+                                        <img src="vendor/img/product/contest/machan_music.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="up-comming-pro-info">
+                                    <h3><a href="#">Machan Music</a></h3>
+                                    <p>India has a massive pool of talented artists who make music in so many genres, sing in so many languages and perform in different geographical locations. No single platform has been capable of inviting, judging and identifying all the talented individuals from across the country.</p>
+                                    <p>
+                                        Machan Music is a digital platform which is built to not just handle, but leverage this diversity of talent from different parts of India. The platform hosts an ongoing competition which continuously identifies, develops and promotes talented artists on a national scale. 
+                                    </p>
+                                    <p>
+                                        <b>Machan Music is a digital platform which is built to not just handle, but leverage this diversity of talent from different parts of India. The platform hosts an ongoing competition which continuously identifies, develops and promotes talented artists on a national scale. </b>
+                                    </p>
+                                    <div class="up-comming-time-2 clearfix">
+                                        <div data-countdown="2017/01/15"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 mb-20">
+                            <div class="up-comming-pro up-comming-pro-2 clearfix">
+                                <div class="up-comming-pro-img">
+                                    <a href="#">
+                                        <img src="vendor/img/product/contest/world_bach_competition.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="up-comming-pro-info">
+                                    <h3><a href="#">ANNOUNCING: WORLD BACH COMPETITION 2020</a></h3>
+                                    <p>As a response to the COVID-19 global pandemic, with empathy toward all musicians affected, and with awareness of the importance of J.S. Bach's music now more than ever, the Boulder Bach Festival has started an annual online solo World Bach Competition. The WBC is open to musicians in multiple age categories, including students, professional, and community musicians—with no upper age limit. All instruments and voice types are invited to apply.
+                                    </p>
+                                    <p>
+                                    Open to all musicians, internationally in the following categories: high school, university, community, professional.
+                                    </p>
+                                    <p>
+                                    Percussion, Brass, Woodwinds, Strings, Keyboard Instruments, Plucked Instruments, Non-Traditional Instruments, Non-Classical instruments, Non-Western instruments, Acoustic and Electric instruments, and Singers are all encouraged to apply, performing solo Bach. Transcriptions of J.S. Bach’s works are welcome. No multitracking—all entries must be performed live in the video, with the exception of vocal accompaniment in observance of social distancing (see below).   
+                                    </p>
+                                    <div class="up-comming-time-2 clearfix">
+                                        <div data-countdown="2017/01/15"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- UP COMMING PRODUCT SECTION END -->               
+        </section>
+        <!-- End page content -->
+
+        <!-- START FOOTER AREA -->
+        <footer id="footer" class="footer-area">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <div class="footer-wrapper">
+                        <div class="footer-top-inner">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-5 col-sm-4">
+                                    <div class="single-footer footer-about">
+                                        <div class="footer-logo">
+                                            <img src="vendor/img/logo/logo.png" alt="">
+                                        </div>
+                                        <div class="footer-brief">
+                                            <p>Rhythm House is a music store in the city which offers not only music but contests and live shows too. It caters to almost all the age groups by providing the CDs, tapes of poems for kids, latest pop music collection for teenagers, etc. Rhythm House also caters to a slightly older age group and boasts of the largest collection of regional and devotional music.</p>
+                                        </div>
+                                        <ul class="footer-social">
+                                            <li>
+                                                <a class="facebook" href="" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="google-plus" href="" title="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="twitter" href="" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 hidden-md hidden-sm">
+                                    <div class="single-footer">
+                                        <h4 class="footer-title border-left">My Shop</h4>
+                                        <ul class="footer-menu">
+                                            <li>
+                                                <a href="product.html?type=cd"><span>CD</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html?type=dvd"><span>DVD</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html?type=tape"><span>Tape</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html?type=book"><span>Book</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html?type=magazine"><span>Magazine</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4">
+                                    <div class="single-footer">
+                                        <h4 class="footer-title border-left">account</h4>
+                                        <ul class="footer-menu">
+                                            <li>
+                                                <a href="membership.html"><span>My Account</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="cart.html"><span>My Cart</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="login.html"><span>Sign In</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="register.html"><span>Registration</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="single-footer">
+                                        <h4 class="footer-title border-left">Subscribe</h4>
+                                        <div class="footer-message">
+                                            <form action="" onsubmit="event.preventDefault(); alert('Thanks for subcribe!')">
+                                                <input type="text" name="name" required placeholder="Your name here...">
+                                                <input type="text" name="email" required pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]{1,}\.[a-zA-z]{2,3}" placeholder="Your email here...">
+                                                <button class="submit-btn" type="submit">Subcribe</button> 
+                                            </form>
+                                            <br>
+                                            <audio controls autoplay>
+                                                <source src="vendor/audio/MeditationPeacefulRelaxingSoothing.mp3" type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom black-bg">
+                <div class="container-fluid">
+                    <div class="footer-bottom-wrapper">
+                        <div class="copyright">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="copyright-text">
+                                        <p>&copy; <a href="#" target="_blank">Team5</a> 2020. All Rights Reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER AREA -->
+    </div>
+    <!-- jquery latest version -->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="vendor/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <!-- Slick jquery carousel -->
+    <script src="vendor/slick/slick.min.js"></script>
+    <!-- Mean menu jquery -->
+    <script src="vendor/jQuery-Plugin-for-Responsive-Menu-System-meanMenu/jquery.meanmenu.min.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="vendor/js/main.js"></script>
+</body>
+</html>
