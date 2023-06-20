@@ -4,7 +4,7 @@ var app = angular.module("myAPP", ["ngRoute"]);
                 .when("/", {
                     templateUrl: "homepage.html"
                 })
-                .when("/Zone", {
+                .when("/zone", {
                      templateUrl: "Zone.html"
                 })
                 .when("/NEWSB", {
